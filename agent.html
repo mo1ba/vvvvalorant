@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+ <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+   <header>
+        <section class="header_wrap noto_sans_kr">
+            <article class="header_w_logo">
+                <div class="header_riot">
+                    <div id="header_riot_btn">
+                        <img src="./img/header/header_riot.png" alt="">
+                        <img class="arrow_down" src="./img/header/header_arrow_down.png" alt="">
+                    </div>
+                    <ul id="header_riot_wrap">
+                        <li>게임</li>
+                        <li><a href="">리그 오브 레전드</a></li>
+                        <li><a href="./index.html">발로란트</a></li>
+                        <li><a href="">전략적 팀 전투</a></li>
+                        <li><a href="">레전드 오브 룬테라</a></li>
+                        <li><a href="">리그 오브 레전드: 와일드 리프트</a></li>
+                    </ul>
+                </div>
+                <div class="header_valorant">
+                    <a href="./index.html"><img src="./img/header/header_logo_valornat.png" alt=""></a>
+                </div>
+            </article>
+
+            <article class="header_w_menu">
+                <ul class="header_w_menu_wrap">
+                    <li class="header_w_m_w_info">
+                        <a href="./GameInfo.html">
+                            <p>게임 정보</p>
+                            <span><img class="arrow_down" src="./img/header/header_arrow_down.png" alt=""></span>
+                        </a>
+                        <ul>
+                            <li><a href="./GameInfo.html"><p>게임 정보</p></a></li>
+                            <li><a href="./agent.html"><p>요원</p></a></li>
+                            <li><a href="./weapon.html"><p>무기</p></a></li>
+                            <li><a href=""><p>맵</p></a></li>
+                        </ul>
+                    </li>
+                    <li class="header_w_m_w_media">
+                        <a href="">
+                            <p>미디어</p>
+                        </a>
+                    </li>
+                    <li class="header_w_m_w_news">
+                        <a href="">
+                            <p>소식</p>
+                            <span><img class="arrow_down" src="./img/header/header_arrow_down.png" alt=""></span>
+                        </a>
+                        <ul>
+                            <li><a href="./Gameupdate.html"><p>게임 업데이트</p></a></li>
+                            <li><a href="./sub_notice.html"><p>공지사항</p></a></li>
+                        </ul>
+                    </li>
+                    <li class="header_w_m_w_client">
+                        <a href="">
+                            <p>고객지원</p>
+                            <span><img class="arrow_down" src="./img/header/header_arrow_down.png" alt=""></span>
+                        </a>
+                        <ul>
+                            <li><a href=""><p>사양</p></a></li>
+                            <li><a href=""><p>고객지원</p></a></li>
+                        </ul>
+                    </li>
+                    <li class="header_w_m_w_social">
+                        <a href="">
+                            <p>소셜 미디어</p>
+                            <span><img class="arrow_down" src="./img/header/header_arrow_down.png" alt=""></span>
+                        </a>
+                        <ul>
+                            <li class="esports_arrow_flex">
+                                <a href="https://www.youtube.com/@VALORANTkr">
+                                    <p>유튜브</p>
+                                    <img class="esports_arrow" src="./img/header/header_esports.png" alt="">
+                                </a>
+                            </li>
+                            <li class="esports_arrow_flex">
+                                <a href="https://www.instagram.com/valorantkr?igsh=b3U0ZDN2YzgxczFx">
+                                    <p>인스타그램</p>
+                                    <img class="esports_arrow" src="./img/header/header_esports.png" alt="">
+                                </a>
+                            </li>
+                            <li class="esports_arrow_flex">
+                                <a href="https://www.facebook.com/VALORANTKR/?locale=ko_KR">
+                                    <p>페이스북</p>
+                                    <img class="esports_arrow" src="./img/header/header_esports.png" alt="">
+                                </a>
+                            </li>
+                            <li class="esports_arrow_flex">
+                                <a href="https://x.com/valorant">
+                                    <p>X</p>
+                                    <img class="esports_arrow" src="./img/header/header_esports.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header_w_m_w_esports">
+                        <a href="./sub_esports.html">
+                            <p>E스포츠</p>
+                            <span><img class="esports_arrow" src="./img/header/header_esports.png" alt=""></span>
+                        </a>
+                    </li>
+                    <li class="header_w_m_w_more">
+                        <a href="">
+                            <p>더보기</p>
+                            <span><img class="arrow_down" src="./img/header/header_arrow_down.png" alt=""></span>
+                        </a>
+                        <ul>
+                            <li><a href="">고객지원</a></li>
+                            <li><a href="">소셜 미디어</a></li>
+                            <li><a href="./sub_esports.html">E스포츠</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="header_w_search">
+                <div class="header_w_s_search">
+                    <a href=""><img src="./img/header/header_search.png" alt=""></a>
+                    <input class="header_w_s_search_text" type="text">
+                </div>
+                <div class="header_w_s_lang">
+                    <div id="header_w_s_lang_w"><img src="./img/header/header_language.png" alt=""></div>
+                    <ul id="header_w_s_lang_arr">
+                        <li><a href="">한국어</a></li>
+                        <li><a href="">일본어</a></li>
+                        <li><a href="">영어</a></li>
+                    </ul>
+                </div>
+                <div class="header_w_s_play">
+                    <a href="">
+                        <div>지금 플레이하기</div>
+                    </a>
+                </div>
+                <div class="header_w_s_menu">
+                    <div id="menu_btn"><img src="./img/header/header_menu.png" alt=""></div>
+                    <ul id="header_w_s_m_menu_w" class="header_w_s_m_menu">
+                        <li class="header_w_s_m_menu_logo">
+                            <div class="logo_img">
+                                <a href="./index.html">
+                                    <img src="./img/header/header_logo_valornat.png" alt="">
+                                </a>
+                            </div>
+                            <div id="header_w_s_m_menu_esc">
+                                <img src="./img/header/header_x_sign.png" alt="">
+                            </div>
+                        </li>
+                        <li class="header_w_s_m_menu_search">
+                            <div class="search_image"><img src="./img/header/header_search.png" alt=""></div>
+                            <div><input type="text"></div>
+                        </li>
+                        <li class="header_w_s_m_menu_info">
+                            <div class="menu_flex">
+                                <a href="./GameInfo.html">게임 정보</a>
+                                <img class="arrow_down" src="./img/header/header_arrow_down.png" alt="">
+                            </div>
+                            <ul class="menu_wrap">
+                                <li><a href="./GameInfo.html">게임 정보</a></li>
+                                <li><a href="./agent.html">요원</a></li>
+                                <li><a href="">맵</a></li>
+                                <li><a href="./weapon.html">무기</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_w_s_m_menu_media">
+                            <div class="menu_flex">
+                                <a href="">미디어</a>
+                            </div>
+                        </li>
+                        <li class="header_w_s_m_menu_news">
+                            <div class="menu_flex">
+                                <a href="">소식</a>
+                                <img class="arrow_down" src="./img/header/header_arrow_down.png" alt="">
+                            </div>
+                            <ul class="menu_wrap">
+                                <li><a href="./Gameupdate.html">게임 업데이트</a></li>
+                                <li><a href="./sub_notice.html">공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_w_s_m_menu_client">
+                            <div class="menu_flex">
+                                <a href="">고객지원</a>
+                                <img class="arrow_down" src="./img/header/header_arrow_down.png" alt="">
+                            </div>
+                            <ul class="menu_wrap">
+                                <li><a href="">사양</a></li>
+                                <li><a href="">고객지원</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_w_s_m_menu_social">
+                            <div class="menu_flex">
+                                <a href="">소셜 미디어</a>
+                                <img class="arrow_down" src="./img/header/header_arrow_down.png" alt="">
+                            </div>
+                            <ul class="menu_wrap">
+                                <li><a href="https://www.youtube.com/@VALORANTkr">유튜브</a></li>
+                                <li><a href="https://www.instagram.com/valorantkr?igsh=b3U0ZDN2YzgxczFx">인스타그램</a></li>
+                                <li><a href="https://www.facebook.com/VALORANTKR/?locale=ko_KR">페이스북</a></li>
+                                <li><a href="https://x.com/valorant">X</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_w_s_m_menu_esports">
+                            <div class="menu_flex">
+                                <a href="./sub_esports.html">E스포츠</a>
+                                <img class="arrow_down" src="./img/header/header_esports.png" alt="">
+                            </div>
+                        </li>
+                        <li class="header_w_s_m_menu_play">
+                            <div><a href="">지금 플레이하기</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </header>
+<main>
+    <section class="agent_sec1">
+       <h1>요원</h1>
+       <nav class="sub_nav">
+       <ul class="agent_category">
+        <li><a href="">모두</a></li>
+        <li><a href="">타격대</a></li>
+        <li><a href="">감시자</a></li>
+        <li><a href="">전략가</a></li>
+        <li><a href="">척후대</a></li>
+       </ul>
+    </nav>
+       <section class="agent_box">
+       <div class="hoverbox">
+            <a href=""><img src="./img/Brimstone.jpg" alt="">
+            <div class="agent_txtbox"><span>브림스톤</span></div></a>
+        </div>
+          <div class="hoverbox">
+            <a href=""><img src="./img/Phoenix.jpg" alt="">
+            <div class="agent_txtbox"><span>피닉스</span></div></a>
+        </div>
+          <div class="hoverbox">
+            <a href=""><img src="./img/Sage.jpg" alt="">
+            <div class="agent_txtbox"><span>세이지</span></div></a>
+        </div>
+          <div class="hoverbox">
+            <a href=""><img src="./img/Sova.jpg" alt="">
+            <div class="agent_txtbox"><span>소바</span></div></a>
+        </div>
+    </section>
+    <section class="agent_box">
+       <div class="hoverbox">
+            <a href=""><img src="./img/Viper.jpg" alt="">
+            <div class="agent_txtbox"><span>바이퍼</span></div></a>
+        </div>
+          <div class="hoverbox">
+            <a href=""><img src="./img/Cypher.jpg" alt="">
+            <div class="agent_txtbox"><span>사이퍼</span></div></a>
+        </div>
+        <div class="more_btn_wrap">
+        <button class="more_btn">더보기</button></div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Reyna.jpg" alt="">
+            <div class="agent_txtbox"><span>레이나</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Killjoy.jpg" alt="">
+            <div class="agent_txtbox"><span>킬조이</span></div></a>
+        </div>
+    </section>
+    <section class="agent_box">
+       <div class="hoverbox none">
+            <a href=""><img src="./img/Breach.jpg" alt="">
+            <div class="agent_txtbox"><span>브리치</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Omen.jpg" alt="">
+            <div class="agent_txtbox"><span>오멘</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Jett.jpg" alt="">
+            <div class="agent_txtbox"><span>제트</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Raze.jpg" alt="">
+            <div class="agent_txtbox"><span>레이즈</span></div></a>
+        </div>
+    </section>
+        <section class="agent_box">
+       <div class="hoverbox none">
+            <a href=""><img src="./img/Skye.jpg" alt="">
+            <div class="agent_txtbox"><span>스카이</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Yoru.jpg" alt="">
+            <div class="agent_txtbox"><span>요루</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Astra.jpg" alt="">
+            <div class="agent_txtbox"><span>아스트라</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/KayO.jpg" alt="">
+            <div class="agent_txtbox"><span>케이/오</span></div></a>
+        </div>
+    </section>
+        <section class="agent_box">
+       <div class="hoverbox none">
+            <a href=""><img src="./img/Chamber.jpg" alt="">
+            <div class="agent_txtbox"><span>체임버</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Neon.jpg" alt="">
+            <div class="agent_txtbox"><span>네온</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Fade.jpg" alt="">
+            <div class="agent_txtbox"><span>페이드</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Harbor.jpg" alt="">
+            <div class="agent_txtbox"><span>하버</span></div></a>
+        </div>
+    </section>
+        <section class="agent_box">
+       <div class="hoverbox none">
+            <a href=""><img src="./img/Gekko.jpg" alt="">
+            <div class="agent_txtbox"><span>게코</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Deadlock.jpg" alt="">
+            <div class="agent_txtbox"><span>데드록</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Iso.jpg" alt="">
+            <div class="agent_txtbox"><span>아이소</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Clove.jpg" alt="">
+            <div class="agent_txtbox"><span>클로브</span></div></a>
+        </div>
+    </section>
+        <section class="agent_lastbox">
+       <div class="hoverbox none">
+            <a href=""><img src="./img/Vyse.jpg" alt="">
+            <div class="agent_txtbox"><span>바이스</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Tejo.png" alt="">
+            <div class="agent_txtbox"><span>테호</span></div></a>
+        </div>
+          <div class="hoverbox none">
+            <a href=""><img src="./img/Waylay.jpeg" alt="">
+            <div class="agent_txtbox"><span>웨이레이</span></div></a>
+            
+        </div>
+
+    </section>
+ 
+   
+</section>
+</main> 
+      <!-- footer start -->
+       <footer>
+        <ul class="sns_btn">
+            <li><a href="https://www.youtube.com/@VALORANTkr"><img src="./img/footer/Youtube.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/valorantkr?igsh=b3U0ZDN2YzgxczFx"><img src="./img/footer/Instagram.png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/VALORANTKR/?locale=ko_KR"><img src="./img/footer/Facebook.png" alt=""></a></li>
+            <li><a href="https://discord.com/invite/riotgames-valorant-kr"><img src="./img/footer/Discord.png" alt=""></a></li>
+            <li><a href="https://x.com/valorant"><img src="./img/footer/Twiter.png" alt=""></a></li>
+        </ul>
+
+        <div class="riot_games_logo">
+            <img src="./img/footer/icon-12.png" alt="">
+        </div>
+
+        <div class="text_inc">
+            <p>© 2020-2025 Riot Games, Inc. RIOT GAMES, VALORANT and any associated logos are trademarks, service <br>
+                marks, and/or registered trademarks of Riot Games, Inc.</p>
+        </div>
+
+        <div class="text_address">
+            <p>라이엇게임즈코리아 유한회사 서울특별시 강남구 테헤란로 521 30층 (삼성동, 파르나스타워)<br>
+                대표자 : 조혁진 | 대표전화 : 02-3454-1560 | FAX : 02-3454-1565<br>
+                사업자등록번호 : 120-87-68488 |사업자등록번호 : 120-87-68488 |</p>
+        </div>
+
+        <ul class="text_info_btn">
+            <li class="text_info_btn1"><a href="">사용약관</a></li>
+            <li class="text_info_btn1"><a href="">운영정책</a></li>
+            <li class="text_info_btn1"><a href="">고객센터</a></li>
+            <!-- <li class="text_info_btn2"><a href="">개인정보 처리방침</a></li>
+            <li class="text_info_btn3"><a href="">게임시간 선택제</a></li>
+            <li class="text_info_btn4"><a href="">사업자정보확인</a></li>
+            <li class="text_info_btn5"><a href="">쿠키 설정</a></li> -->
+        </ul>
+
+        <div class="game_notice_img">
+            <img src="./img/footer/f1.png" alt="">
+            <img src="./img/footer/f2.png" alt="">
+            <img src="./img/footer/f3.png" alt="">
+            
+        </div>
+
+
+    </footer>
+    <script src="./js/header.js"></script>
+    </body>
+</html>
