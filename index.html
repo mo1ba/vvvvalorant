@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>valorant</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index_style.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-    </style>
-    <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
     </style>
+   <style>
+         .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-button-next{
+        color: #fff;
+    }
+    .swiper-button-prev{
+      color: #fff;
+    }
+    </style>
 </head>
-
 <body>
-
     <header>
         <section class="header_wrap noto_sans_kr">
             <article class="header_w_logo">
@@ -31,7 +56,7 @@
                         <li><a href="https://www.leagueoflegends.com/ko-kr/">리그 오브 레전드</a></li>
                         <li><a href="./index.html">발로란트</a></li>
                         <li><a href="https://teamfighttactics.leagueoflegends.com/ko-kr/">전략적 팀 전투</a></li>
-                        <li><a href="https://playruneterra.com/ko-kr/news/">레전드 오브 룬테라</a></li>
+                        <li><a href="https://playruneterra.com/ko-kr/">레전드 오브 룬테라</a></li>
                         <li><a href="https://wildrift.leagueoflegends.com/ko-kr/">리그 오브 레전드: 와일드 리프트</a></li>
                     </ul>
                 </div>
@@ -287,7 +312,9 @@
                 </div>
 
             </div>
-            <div class="background">
+            <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" class="background">
                 <img src="./img/index_background.jpg" alt="">
                 <section>
                     <article class="background_box">
@@ -298,11 +325,29 @@
                 </section>
          </div>
         </section>
+ <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/ValorantWallpaper_Ascent.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/ValorantWallpaper_Bind.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/ValorantWallpaper_Haven.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/ValorantWallpaper_Icebox.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/ValorantWallpaper_SplitMap.jpg"</div>
+      <div class="swiper-slide"><img src="./img/ValorantWallpaper_SplitRange.jpg"</div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
 
     </main>
 
-    <footer>
+    <footer data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
         <ul class="sns_btn">
             <li><a href="https://www.youtube.com/@VALORANTkr"><img src="./img/footer/Youtube.png" alt=""></a></li>
             <li><a href="https://www.instagram.com/valorantkr?igsh=b3U0ZDN2YzgxczFx"><img
@@ -347,8 +392,33 @@
         </div>
     </footer>
 
+ <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
     <script src="./js/header.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+         </script>
 </body>
 
 </html>

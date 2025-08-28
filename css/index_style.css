@@ -60,7 +60,7 @@
     width: 200px;
     height: 50px;
     color: #fff;
-    background-color: #ff4655;
+    background-color: #ff1b39a1;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -192,9 +192,8 @@
   margin-bottom: 20px;
 }
 .watch_btn {
-  display: inline-block;
   font-family: "Noto Sans KR", sans-serif;
-  background-color: #ff4655;
+  background-color: #ff4b4b;
   border: none;
   padding: 12px 24px;
   color: white;
@@ -202,11 +201,6 @@
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-}
-.watch_btn:hover{
-  transform: scale(1.03);
-  box-shadow: 0 4px 15px rgba(255, 70, 85, 0.4);
 }
 
 @media screen and (max-width: 1024px) {
@@ -222,9 +216,9 @@
     .background_p{
       font-size: 16px;  
     }
-    /* .watch_btn{ 
-    } */
-     /* 효과 대기중 뭐할지 고민 */
+    .watch_btn{
+      width: 300px; height: 50px;
+    }
 }
 @media screen and (max-width: 720px) {
     .news_box{
@@ -245,11 +239,11 @@
     font-size: 48px;
   }
 
-  /* .watch_btn {
+  .watch_btn {
     width: 90%;
     max-width: 300px;
     height: 48px;
-  } */
+  }
 }
 
 footer{

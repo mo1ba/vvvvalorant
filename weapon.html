@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/weapon.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-    </style>
-    <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
     </style>
 </head>
@@ -25,12 +23,12 @@
                         <img class="arrow_down" src="./img/header/header_arrow_down.png" alt="">
                     </div>
                     <ul id="header_riot_wrap">
-                        <li>게임</li>
-                        <li><a href="">리그 오브 레전드</a></li>
+                       <li>게임</li>
+                        <li><a href="https://www.leagueoflegends.com/ko-kr/">리그 오브 레전드</a></li>
                         <li><a href="./index.html">발로란트</a></li>
-                        <li><a href="">전략적 팀 전투</a></li>
-                        <li><a href="">레전드 오브 룬테라</a></li>
-                        <li><a href="">리그 오브 레전드: 와일드 리프트</a></li>
+                        <li><a href="https://teamfighttactics.leagueoflegends.com/ko-kr/">전략적 팀 전투</a></li>
+                        <li><a href="https://playruneterra.com/ko-kr/">레전드 오브 룬테라</a></li>
+                        <li><a href="https://wildrift.leagueoflegends.com/ko-kr/">리그 오브 레전드: 와일드 리프트</a></li>
                     </ul>
                 </div>
                 <div class="header_valorant">
@@ -228,164 +226,163 @@
         </section>
     </header>
 <main>
-    
-   <section class="weapon_sec1">
-          <h1>무기를 선택하세요</h1>
-       <nav class="sub_nav">
-       <ul class="weapon_category hover_color">
-        <li><a href="">소총</a></li>
-        <li><a href="">기관단총</a></li>
-        <li><a href="">산탄총</a></li>
-        <li><a href="">중기관총</a></li>
-        <li><a href="">저격소총</a></li>
-        <li><a href="">보조무기</a></li>
-       </ul>
-    </nav>
-  
-    <div class="weapon_grid">
-        <div class="weapon_box hover ">
-        <a href=""><img src="./img/Classic.png" alt="클래식">
-            <div class="weapon_name">클래식.</div>
-            <div class="weapon_type">유형 / 보조무기</div>
-            <div class="weapon_description">기본으로 지급되며 누구나 쉽게 쓸 수 있는<br>최고의 기본 무기입니다.</div>
-       </a></div>
+    <section class="weapon_sec1">
+        <h1>무기를 선택하세요</h1>
+     <nav class="sub_nav">
+     <ul class="weapon_category hover_color">
+      <li><button class="filter_btn active" data-filter="전체">전체 보기</button></li>
+      <li><button class="filter_btn" data-filter="소총">소총</button></li>
+      <li><button class="filter_btn" data-filter="기관단총">기관단총</button></li>
+      <li><button class="filter_btn" data-filter="산탄총">산탄총</button></li>
+      <li><button class="filter_btn" data-filter="중기관총">중기관총</button></li>
+      <li><button class="filter_btn" data-filter="저격소총">저격소총</button></li>
+      <li><button class="filter_btn" data-filter="보조무기">보조무기</button></li>
+     </ul>
+  </nav>
 
-         <div class="weapon_box hover">
-        <a href=""><img src="./img/Ghost.jpg" alt="고스트">
-            <div  class="weapon_name">고스트.</div>
-            <div  class="weapon_type">유형 // 보조무기</div>
-            <div  class="weapon_description">날렵하고 소리가 나지 않으며 <br> 어떤 거리에서 쏴도 효율적입니다.
+  <div class="weapon_grid">
+      <div class="weapon_box hover" data-filter="보조무기">
+      <a href=""><img src="./img/Classic.png" alt="클래식">
+          <div class="weapon_name">클래식.</div>
+          <div class="weapon_type">유형 / 보조무기</div>
+          <div class="weapon_description">기본으로 지급되며 누구나 쉽게 쓸 수 있는<br>최고의 기본 무기입니다.</div>
+     </a></div>
+
+       <div class="weapon_box hover" data-filter="보조무기">
+      <a href=""><img src="./img/Ghost.jpg" alt="고스트">
+          <div  class="weapon_name">고스트.</div>
+          <div  class="weapon_type">유형 / 보조무기</div>
+          <div  class="weapon_description">날렵하고 소리가 나지 않으며 <br> 어떤 거리에서 쏴도 효율적입니다.
 </div>
-        </a></div>
+      </a></div>
 
-         <div class="weapon_box hover">
-        <a href=""><img src="./img/Frenzy.jpg" alt="프렌지">
-            <div  class="weapon_name">프렌지.</div>
-            <div  class="weapon_type">유형 / 보조무기</div>
-            <div  class="weapon_description">근거리에서 사용하세요. <br> 거리가 멀다면... 다른 무기를 추천합니다.</div>
-        </a></div>
+       <div class="weapon_box hover" data-filter="보조무기">
+      <a href=""><img src="./img/Frenzy.jpg" alt="프렌지">
+          <div  class="weapon_name">프렌지.</div>
+          <div  class="weapon_type">유형 / 보조무기</div>
+          <div  class="weapon_description">근거리에서 사용하세요. <br> 거리가 멀다면... 다른 무기를 추천합니다.</div>
+      </a></div>
 
-          <div class="weapon_box hover">
-        <a href=""><img src="./img/Shorty.jpg" alt="쇼티">
-            <div class="weapon_name">쇼티.</div>
-            <div class="weapon_type">유형 / 보조무기</div>
-            <div class="weapon_description">가까이 있는 적을 기습할 때 <br> 최고의 효과를 발휘합니다. </div>
+        <div class="weapon_box hover" data-filter="보조무기">
+      <a href=""><img src="./img/Shorty.jpg" alt="쇼티">
+          <div class="weapon_name">쇼티.</div>
+          <div class="weapon_type">유형 / 보조무기</div>
+          <div class="weapon_description">가까이 있는 적을 기습할 때 <br> 최고의 효과를 발휘합니다. </div>
 </a></div>
 
-          <div class="weapon_box hover">
-        <a href=""><img src="./img/Sheriff.jpg" alt="셰리프">
-            <div class="weapon_name">셰리프.</div>
-            <div class="weapon_type">유형 / 보조무기</div>
-            <div class="weapon_description">헤드샷을 노리기 좋은 <br> 현대식 6연발 무기입니다</div>
-        </a></div>
+        <div class="weapon_box hover" data-filter="보조무기">
+      <a href=""><img src="./img/Sheriff.jpg" alt="셰리프">
+          <div class="weapon_name">셰리프.</div>
+          <div class="weapon_type">유형 / 보조무기</div>
+          <div class="weapon_description">헤드샷을 노리기 좋은 <br> 현대식 6연발 무기입니다</div>
+      </a></div>
 
-          <div class="weapon_box hover">
-        <a href=""><img src="./img/Stinger.jpg" alt="스팅어">
-            <div class="weapon_name">스팅어.</div>
-            <div class="weapon_type">유형 / 기관단총</div>
-            <div class="weapon_description">스팅어의 공격이 적중하는 순간 <br> 끝난 것과 다름없습니다. </div>
-        </a></div>
+        <div class="weapon_box hover" data-filter="기관단총">
+      <a href=""><img src="./img/Stinger.jpg" alt="스팅어">
+          <div class="weapon_name">스팅어.</div>
+          <div class="weapon_type">유형 / 기관단총</div>
+          <div class="weapon_description">스팅어의 공격이 적중하는 순간 <br> 끝난 것과 다름없습니다. </div>
+      </a></div>
 
-        <!-- 1024 경계선 숨김 -->
-          <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Spectre.jpg" alt="스펙터">
-            <div class="weapon_name">스펙터.</div>
-            <div class="weapon_type">유형 / 기관단총</div>
-            <div class="weapon_description">확신이 없을 떄는 <br> 스펙터를 선택하세요.</div>
-       </a></div>
+      <!-- 1024 경계선 숨김 -->
+        <div class="weapon_box hover hide" data-filter="기관단총">
+      <a href=""><img src="./img/Spectre.jpg" alt="스펙터">
+          <div class="weapon_name">스펙터.</div>
+          <div class="weapon_type">유형 / 기관단총</div>
+          <div class="weapon_description">확신이 없을 떄는 <br> 스펙터를 선택하세요.</div>
+     </a></div>
 
-        <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Vandal.jpg" alt="밴달">
-            <div class="weapon_name">밴달.</div>
-            <div class="weapon_type">유형 / 소총</div>
-            <div class="weapon_description">정확도가 높은 무기로 짧은 점사 시 <br> 무시무시한 위력을 과시합니다.</div>
-        </a></div> 
+      <div class="weapon_box hover hide" data-filter="소총">
+      <a href=""><img src="./img/Vandal.jpg" alt="밴달">
+          <div class="weapon_name">밴달.</div>
+          <div class="weapon_type">유형 / 소총</div>
+          <div class="weapon_description">정확도가 높은 무기로 짧은 점사 시 <br> 무시무시한 위력을 과시합니다.</div>
+      </a></div> 
 
-         <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Phantom.jpg" alt="팬텀">
-            <div class="weapon_name">팬텀.</div>
-            <div class="weapon_type">유형 / 소총</div>
-            <div class="weapon_description">밸런스 좋은 무기로 <br>
+       <div class="weapon_box hover hide" data-filter="소총">
+      <a href=""><img src="./img/Phantom.jpg" alt="팬텀">
+          <div class="weapon_name">팬텀.</div>
+          <div class="weapon_type">유형 / 소총</div>
+          <div class="weapon_description">밸런스 좋은 무기로 <br>
 안정적인 연사가 가능합니다.</div>
-        </a></div> 
+      </a></div> 
 
-         <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Bulldog.jpg" alt="프렌지">
-            <div class="weapon_name">불독.</div>
-            <div class="weapon_type">유형 / 소총</div>
-            <div class="weapon_description">불독으로 적을 처치해 얻을 수 <br>
- 있는 행복도 있습니다.</div>
-       </a></div> 
-        
-        <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Guardian.jpg" alt="프렌지">
-            <div class="weapon_name">가디언.</div>
-            <div class="weapon_type">유형 / 소총</div>
-            <div class="weapon_description">인내심 있는 사수의 손에서 빛납니다.
+       <div class="weapon_box hover hide" data-filter="소총">
+      <a href=""><img src="./img/Bulldog.jpg" alt="불독">
+          <div class="weapon_name">불독.</div>
+          <div class="weapon_type">유형 / 소총</div>
+          <div class="weapon_description">불독으로 적을 처치해 얻을 수 <br>
+있는 행복도 있습니다.</div>
+     </a></div> 
+      
+      <div class="weapon_box hover hide" data-filter="소총">
+      <a href=""><img src="./img/Guardian.jpg" alt="가디언">
+          <div class="weapon_name">가디언.</div>
+          <div class="weapon_type">유형 / 소총</div>
+          <div class="weapon_description">인내심 있는 사수의 손에서 빛납니다.
 </div>
-        </a> </div>
+      </a> </div>
 
-        <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Bucky.jpg" alt="프렌지">
-            <div class="weapon_name">버키.</div>
-            <div class="weapon_type">유형 / 산탄총</div>
-            <div class="weapon_description">공격팀이든 수비팀이든 펌프 액션 <br> 산탄총을 들고 있다는 사실이 중요하죠.
+      <div class="weapon_box hover hide" data-filter="산탄총">
+      <a href=""><img src="./img/Bucky.jpg" alt="버키">
+          <div class="weapon_name">버키.</div>
+          <div class="weapon_type">유형 / 산탄총</div>
+          <div class="weapon_description">공격팀이든 수비팀이든 펌프 액션 <br> 산탄총을 들고 있다는 사실이 중요하죠.
 </div>
-        </a> </div> 
+      </a> </div> 
 
-        <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Judge.jpg" alt="프렌지">
-            <div class="weapon_name">저지.</div>
-            <div class="weapon_type">유형 / 산탄총</div>
-            <div class="weapon_description">연사로 높은 피해를 입히는 <br>
+      <div class="weapon_box hover hide" data-filter="산탄총">
+      <a href=""><img src="./img/Judge.jpg" alt="저지">
+          <div class="weapon_name">저지.</div>
+          <div class="weapon_type">유형 / 산탄총</div>
+          <div class="weapon_description">연사로 높은 피해를 입히는 <br>
 자동 속사 산탄총입니다.</div>
-        </a></div>
+      </a></div>
 
-          <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Odin.jpg" alt="프렌지">
-            <div class="weapon_name">오딘.</div>
-            <div class="weapon_type">유형 / 중기관총</div>
-            <div  class="weapon_description">사수에게는 영광을, 적에게는 <br>
+        <div class="weapon_box hover hide" data-filter="중기관총">
+      <a href=""><img src="./img/Odin.jpg" alt="오딘">
+          <div class="weapon_name">오딘.</div>
+          <div class="weapon_type">유형 / 중기관총</div>
+          <div  class="weapon_description">사수에게는 영광을, 적에게는 <br>
 파멸을 불러오는 무기입니다.</div>
-        </a></div>
+      </a></div>
 
-          <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Ares.jpg" alt="프렌지">
-            <div  class="weapon_name">아레스.</div>
-            <div  class="weapon_type">유형 / 중기관총</div>
-            <div  class="weapon_description">크기만 보고 다른 무기로 착각하지 마세요.
+        <div class="weapon_box hover hide" data-filter="중기관총">
+      <a href=""><img src="./img/Ares.jpg" alt="아레스">
+          <div  class="weapon_name">아레스.</div>
+          <div  class="weapon_type">유형 / 중기관총</div>
+          <div  class="weapon_description">크기만 보고 다른 무기로 착각하지 마세요.
 </div>
-        </a></div>
+      </a></div>
 
-          <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Marshal.jpg" alt="프렌지">
-            <div  class="weapon_name">마샬.</div>
-            <div  class="weapon_type">유형 / 저격소총</div>
-            <div  class="weapon_description">지역을 주시하고 호흡을 가다듬으세요. <br> 모퉁이를 도는 적들은 후회하게 될 것입니다.
+        <div class="weapon_box hover hide" data-filter="저격소총">
+      <a href=""><img src="./img/Marshal.jpg" alt="마샬">
+          <div  class="weapon_name">마샬.</div>
+          <div  class="weapon_type">유형 / 저격소총</div>
+          <div  class="weapon_description">지역을 주시하고 호흡을 가다듬으세요. <br> 모퉁이를 도는 적들은 후회하게 될 것입니다.
 </div>
-        </a></div>
+      </a></div>
 
-          <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Outlaw.jpg" alt="프렌지">
-            <div class="weapon_name">아웃로.</div>
-            <div class="weapon_type">유형 / 저격소총</div>
-            <div class="weapon_description">두 개의 총열이 뿜어내는 높은 파괴력.<br>죽이거나 
+        <div class="weapon_box hover hide" data-filter="저격소총">
+      <a href=""><img src="./img/Outlaw.jpg" alt="아웃로">
+          <div class="weapon_name">아웃로.</div>
+          <div class="weapon_type">유형 / 저격소총</div>
+          <div class="weapon_description">두 개의 총열이 뿜어내는 높은 파괴력.<br>죽이거나 
 죽거나인 하이라이트 플레이에 <br> 안성맞춤인 저격소총입니다.</div>
-        </a></div>
+      </a></div>
 
-          <div class="weapon_box hover hide">
-        <a href=""><img src="./img/Operator.jpg" alt="프렌지">
-            <div class="weapon_name">오퍼레이터</div>
-            <div class="weapon_type">유형 / 저격소총</div>
-            <div class="weapon_description">자세를 잡고 중요한 지역을 장악하세요.</div>
-        </a></div>
+        <div class="weapon_box hover hide" data-filter="저격소총">
+      <a href=""><img src="./img/Operator.jpg" alt="오퍼레이터">
+          <div class="weapon_name">오퍼레이터</div>
+          <div class="weapon_type">유형 / 저격소총</div>
+          <div class="weapon_description">자세를 잡고 중요한 지역을 장악하세요.</div>
+      </a></div>
 
-    </div>
-    </section> 
-    </main>
-     <div class="more_btn_wrap">
-        <button class="more_btn">더보기</button></div>
-        
+  </div>
+  </section> 
+  </main>
+   <div class="more_btn_wrap">
+      <button class="more_btn">더보기</button></div>
     <!-- footer start -->
        <footer>
         <ul class="sns_btn">
@@ -431,5 +428,11 @@
 
     </footer>
     <script src="./js/header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/weapon.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -17,7 +17,33 @@ header img {
 header img {
     vertical-align: bottom;
 }
+.weapon_category li button {
+    color: #292929;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
 
+.weapon_category li button.active {
+    color: #ff4654;
+    font-weight: 400;
+}
+
+.weapon_category li:has(button.active) {
+    border-bottom: 4px solid #ff4654;
+}
+
+@media screen and (max-width: 1024px) {
+    .weapon_category li button {
+        font-size: 24px;
+        white-space: nowrap;
+    }
+}
 .noto_sans_kr {
     font-family: "Noto Sans KR", sans-serif;
 }

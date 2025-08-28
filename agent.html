@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-    </style>
-    <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-    </style>
+    </style> 
 </head>
 <body>
    <header>
@@ -25,11 +23,11 @@
                     </div>
                     <ul id="header_riot_wrap">
                         <li>게임</li>
-                        <li><a href="">리그 오브 레전드</a></li>
+                        <li><a href="https://www.leagueoflegends.com/ko-kr/">리그 오브 레전드</a></li>
                         <li><a href="./index.html">발로란트</a></li>
-                        <li><a href="">전략적 팀 전투</a></li>
-                        <li><a href="">레전드 오브 룬테라</a></li>
-                        <li><a href="">리그 오브 레전드: 와일드 리프트</a></li>
+                        <li><a href="https://teamfighttactics.leagueoflegends.com/ko-kr/">전략적 팀 전투</a></li>
+                        <li><a href="https://playruneterra.com/ko-kr/">레전드 오브 룬테라</a></li>
+                        <li><a href="https://wildrift.leagueoflegends.com/ko-kr/">리그 오브 레전드: 와일드 리프트</a></li>
                     </ul>
                 </div>
                 <div class="header_valorant">
@@ -227,145 +225,164 @@
         </section>
     </header>
 <main>
-    <section class="agent_sec1">
-       <h1>요원</h1>
-       <nav class="sub_nav">
-       <ul class="agent_category">
-        <li><a href="">모두</a></li>
-        <li><a href="">타격대</a></li>
-        <li><a href="">감시자</a></li>
-        <li><a href="">전략가</a></li>
-        <li><a href="">척후대</a></li>
-       </ul>
+<section class="agent_sec1">
+    <h1>요원</h1>
+    <nav class="sub_nav">
+        <ul class="agent_category">
+            <li><a href="">모두</a></li>
+            <li><a href="">타격대</a></li>
+            <li><a href="">감시자</a></li>
+            <li><a href="">전략가</a></li>
+            <li><a href="">척후대</a></li>
+        </ul>
     </nav>
-       <section class="agent_box">
-       <div class="hoverbox">
-            <a href=""><img src="./img/Brimstone.jpg" alt="">
-            <div class="agent_txtbox"><span>브림스톤</span></div></a>
+    
+    <div class="agents_container">
+        <!-- 첫 번째 행 -->
+        <div class="agent_grid">
+            <div class="hoverbox">
+                <a href=""><img src="./img/Brimstone.jpg" alt="">
+                <div class="agent_txtbox"><span>브림스톤</span></div></a>
+            </div>
+            <div class="hoverbox">
+                <a href=""><img src="./img/Phoenix.jpg" alt="">
+                <div class="agent_txtbox"><span>피닉스</span></div></a>
+            </div>
+            <div class="hoverbox">
+                <a href=""><img src="./img/Sage.jpg" alt="">
+                <div class="agent_txtbox"><span>세이지</span></div></a>
+            </div>
+            <div class="hoverbox">
+                <a href=""><img src="./img/Sova.jpg" alt="">
+                <div class="agent_txtbox"><span>소바</span></div></a>
+            </div>
         </div>
-          <div class="hoverbox">
-            <a href=""><img src="./img/Phoenix.jpg" alt="">
-            <div class="agent_txtbox"><span>피닉스</span></div></a>
+        
+        <!-- 두 번째 행 -->
+        <div class="agent_grid">
+            <div class="hoverbox">
+                <a href=""><img src="./img/Viper.jpg" alt="">
+                <div class="agent_txtbox"><span>바이퍼</span></div></a>
+            </div>
+            <div class="hoverbox">
+                <a href=""><img src="./img/Cypher.jpg" alt="">
+                <div class="agent_txtbox"><span>사이퍼</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Reyna.jpg" alt="">
+                <div class="agent_txtbox"><span>레이나</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Killjoy.jpg" alt="">
+                <div class="agent_txtbox"><span>킬조이</span></div></a>
+            </div>
         </div>
-          <div class="hoverbox">
-            <a href=""><img src="./img/Sage.jpg" alt="">
-            <div class="agent_txtbox"><span>세이지</span></div></a>
-        </div>
-          <div class="hoverbox">
-            <a href=""><img src="./img/Sova.jpg" alt="">
-            <div class="agent_txtbox"><span>소바</span></div></a>
-        </div>
-    </section>
-    <section class="agent_box">
-       <div class="hoverbox">
-            <a href=""><img src="./img/Viper.jpg" alt="">
-            <div class="agent_txtbox"><span>바이퍼</span></div></a>
-        </div>
-          <div class="hoverbox">
-            <a href=""><img src="./img/Cypher.jpg" alt="">
-            <div class="agent_txtbox"><span>사이퍼</span></div></a>
-        </div>
+        
+        <!-- 더보기 버튼 -->
         <div class="more_btn_wrap">
-        <button class="more_btn">더보기</button></div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Reyna.jpg" alt="">
-            <div class="agent_txtbox"><span>레이나</span></div></a>
+            <button class="more_btn">더보기</button>
         </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Killjoy.jpg" alt="">
-            <div class="agent_txtbox"><span>킬조이</span></div></a>
+        
+        <!-- 세 번째 행 -->
+        <div class="agent_grid">
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Breach.jpg" alt="">
+                <div class="agent_txtbox"><span>브리치</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Omen.jpg" alt="">
+                <div class="agent_txtbox"><span>오멘</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Jett.jpg" alt="">
+                <div class="agent_txtbox"><span>제트</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Raze.jpg" alt="">
+                <div class="agent_txtbox"><span>레이즈</span></div></a>
+            </div>
         </div>
-    </section>
-    <section class="agent_box">
-       <div class="hoverbox none">
-            <a href=""><img src="./img/Breach.jpg" alt="">
-            <div class="agent_txtbox"><span>브리치</span></div></a>
+        
+        <!-- 네 번째 행 -->
+        <div class="agent_grid">
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Skye.jpg" alt="">
+                <div class="agent_txtbox"><span>스카이</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Yoru.jpg" alt="">
+                <div class="agent_txtbox"><span>요루</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Astra.jpg" alt="">
+                <div class="agent_txtbox"><span>아스트라</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/KayO.jpg" alt="">
+                <div class="agent_txtbox"><span>케이/오</span></div></a>
+            </div>
         </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Omen.jpg" alt="">
-            <div class="agent_txtbox"><span>오멘</span></div></a>
+        
+        <!-- 다섯 번째 행 -->
+        <div class="agent_grid">
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Chamber.jpg" alt="">
+                <div class="agent_txtbox"><span>체임버</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Neon.jpg" alt="">
+                <div class="agent_txtbox"><span>네온</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Fade.jpg" alt="">
+                <div class="agent_txtbox"><span>페이드</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Harbor.jpg" alt="">
+                <div class="agent_txtbox"><span>하버</span></div></a>
+            </div>
         </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Jett.jpg" alt="">
-            <div class="agent_txtbox"><span>제트</span></div></a>
+        
+        <!-- 여섯 번째 행 -->
+        <div class="agent_grid">
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Gekko.jpg" alt="">
+                <div class="agent_txtbox"><span>게코</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Deadlock.jpg" alt="">
+                <div class="agent_txtbox"><span>데드록</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Iso.jpg" alt="">
+                <div class="agent_txtbox"><span>아이소</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Clove.jpg" alt="">
+                <div class="agent_txtbox"><span>클로브</span></div></a>
+            </div>
         </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Raze.jpg" alt="">
-            <div class="agent_txtbox"><span>레이즈</span></div></a>
+        
+        <!-- 일곱 번째 행 (마지막 3개 + 빈 공간) -->
+        <div class="agent_grid">
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Vyse.jpg" alt="">
+                <div class="agent_txtbox"><span>바이스</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Tejo.png" alt="">
+                <div class="agent_txtbox"><span>테호</span></div></a>
+            </div>
+            <div class="hoverbox none">
+                <a href=""><img src="./img/Waylay.jpeg" alt="">
+                <div class="agent_txtbox"><span>웨이레이</span></div></a>
+            </div>
+            <div class="hoverbox empty">
+                <div style="width: 100%; aspect-ratio: 4/5; background: transparent;"></div>
+                <div class="agent_txtbox" style="visibility: hidden;"><span>빈공간</span></div>
+            </div>
         </div>
-    </section>
-        <section class="agent_box">
-       <div class="hoverbox none">
-            <a href=""><img src="./img/Skye.jpg" alt="">
-            <div class="agent_txtbox"><span>스카이</span></div></a>
-        </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Yoru.jpg" alt="">
-            <div class="agent_txtbox"><span>요루</span></div></a>
-        </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Astra.jpg" alt="">
-            <div class="agent_txtbox"><span>아스트라</span></div></a>
-        </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/KayO.jpg" alt="">
-            <div class="agent_txtbox"><span>케이/오</span></div></a>
-        </div>
-    </section>
-        <section class="agent_box">
-       <div class="hoverbox none">
-            <a href=""><img src="./img/Chamber.jpg" alt="">
-            <div class="agent_txtbox"><span>체임버</span></div></a>
-        </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Neon.jpg" alt="">
-            <div class="agent_txtbox"><span>네온</span></div></a>
-        </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Fade.jpg" alt="">
-            <div class="agent_txtbox"><span>페이드</span></div></a>
-        </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Harbor.jpg" alt="">
-            <div class="agent_txtbox"><span>하버</span></div></a>
-        </div>
-    </section>
-        <section class="agent_box">
-       <div class="hoverbox none">
-            <a href=""><img src="./img/Gekko.jpg" alt="">
-            <div class="agent_txtbox"><span>게코</span></div></a>
-        </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Deadlock.jpg" alt="">
-            <div class="agent_txtbox"><span>데드록</span></div></a>
-        </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Iso.jpg" alt="">
-            <div class="agent_txtbox"><span>아이소</span></div></a>
-        </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Clove.jpg" alt="">
-            <div class="agent_txtbox"><span>클로브</span></div></a>
-        </div>
-    </section>
-        <section class="agent_lastbox">
-       <div class="hoverbox none">
-            <a href=""><img src="./img/Vyse.jpg" alt="">
-            <div class="agent_txtbox"><span>바이스</span></div></a>
-        </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Tejo.png" alt="">
-            <div class="agent_txtbox"><span>테호</span></div></a>
-        </div>
-          <div class="hoverbox none">
-            <a href=""><img src="./img/Waylay.jpeg" alt="">
-            <div class="agent_txtbox"><span>웨이레이</span></div></a>
-            
-        </div>
-
-    </section>
- 
-   
+    </div>
 </section>
 </main> 
       <!-- footer start -->
@@ -413,5 +430,10 @@
 
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/agent.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+        </script>
     </body>
 </html>
